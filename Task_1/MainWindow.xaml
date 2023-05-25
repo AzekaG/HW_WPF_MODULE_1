@@ -1,0 +1,25 @@
+﻿<Window x:Class="Task_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task_1"
+        mc:Ignorable="d"
+        Title="Name List" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="6*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="100,0,0,0">Names</Label>
+        <Border Background="AliceBlue"  Margin="10,0,500,10" Grid.Row="1" BorderBrush="Gainsboro" BorderThickness="4"></Border>
+            <TextBlock  Grid.Row="1" x:Name="nameBlock"  Margin="10,0,500,10" TextAlignment="Left" ScrollViewer.HorizontalScrollBarVisibility="Auto" UseLayoutRounding="True" >
+          </TextBlock>
+        
+        <TextBox Grid.Row="1" x:Name="txtBoxName" Margin="400,0,36,274" TextAlignment="Left" BorderThickness="2,2,2,2" TextChanged="txtBox_TextChanged" Background="White"></TextBox>
+        <Button Grid.Row="1"  x:Name="bntAddName" Content="Add" Margin="512,117,36,156" Click="bntAddName_Click" ></Button>
+        <Button Grid.Row="1"  x:Name="bntClearAll" Content="Clear" Margin="512,239,36,33" Click="bntClearAll_Click" ></Button>
+
+    </Grid>
+</Window>
